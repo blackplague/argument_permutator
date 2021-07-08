@@ -11,3 +11,8 @@ def test_simple_args():
     assert next(ap) == dict(a=2, b=False)
     with pytest.raises(StopIteration):
         _ = next(ap)
+
+
+def test_len_argument_permutator():
+    ap = ArgumentPermutator(a=[1, 2], b=[True, False])
+    assert len(ap) == 4
