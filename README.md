@@ -5,7 +5,7 @@
 The Argument Permutator can be installed directly from git using
 
 ```sh
-#> python -m pip install git+https://github.com/blackplague/dataset_path_manager.git
+#> python -m pip install git+https://github.com/blackplague/argument_permutator.git
 ```
 
 or from pypi using ...
@@ -29,5 +29,9 @@ for argument_permutation in ap:
     func(**argument_permutation)
 
 ```
+
+## TODO
+
+Add a license
 
 And this concludes the README.md
