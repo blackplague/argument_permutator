@@ -9,5 +9,5 @@ setup(
     description=desc,
     author='Michael Andersen',
     author_email='gosuckadeadcow+pypi@gmail.com',
-    packages=find_packages(exclude=['tests'])
+    packages=find_packages(exclude=['tests'], include=['argument_permutator'])
 )
