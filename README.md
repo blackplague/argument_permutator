@@ -21,6 +21,7 @@ from argument_permutator import ArgumentPermutator
 
 ap = ArgumentPermutator(a=[1, 2], b=[True, False])
 
+
 def func(**kwargs):
     for kw, arg in kwarg.items():
         print(f'{kw}={arg}')
