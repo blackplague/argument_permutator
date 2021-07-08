@@ -1,4 +1,4 @@
-from argument_permutator.argument_permutator import ArgumentPermutator
+from argument_permutator import ArgumentPermutator
 
 ap = ArgumentPermutator(a=[1, 2], b=[True, False])
 

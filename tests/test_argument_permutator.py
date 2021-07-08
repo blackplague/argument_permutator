@@ -1,5 +1,5 @@
 import pytest
-from argument_permutator.argument_permutator import ArgumentPermutator
+from argument_permutator import ArgumentPermutator
 
 
 def test_simple_args():
