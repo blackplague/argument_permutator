@@ -27,7 +27,6 @@ def func(**kwargs):
 
 for argument_permutation in ap:
     func(**argument_permutation)
-
 ```
 
 ## TODO
