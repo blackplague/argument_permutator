@@ -33,8 +33,13 @@ for argument_permutation in ap:
 
 ```
 
-## TODO
+## License
 
-Add a license
+The choice of license is based on the fact that the library is as simple as it is. It would not
+make sense to choose another one.
+
+See the file **LICENSE.md**
+
+## TODO
 
 And this concludes the README.md
