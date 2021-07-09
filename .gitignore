@@ -1,0 +1,12 @@
+## Dev demo file
+demo.py
+
+## Cache dirs
+__pycache__/
+.pytest_cache
+
+## Pipenv files
+Pipfile.lock
+
+## egg-info
+*.egg-info/
