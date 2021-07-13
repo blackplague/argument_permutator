@@ -1,5 +1,5 @@
 init:
-	pipenv install
+	poetry install
 
 test:
 	pytest .
