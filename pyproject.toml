@@ -6,6 +6,7 @@ authors = ["Michael Andersen <gosuckadeadcow+github@gmail.com>"]
 license = "lgpl-3.0"
 readme = "README.md"
 repository = "https://github.com/blackplague/argument_permutator"
+packages = [ { include = "argument_permutator" } ]
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/blackplague/argument_permutator/issues"
