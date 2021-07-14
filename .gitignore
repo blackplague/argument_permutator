@@ -5,6 +5,9 @@ demo.py
 __pycache__/
 .pytest_cache
 
+# Build dir
+dist/
+
 ## Pipenv files
 Pipfile.lock
 
