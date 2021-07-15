@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "argument_permutator"
-version = "0.1.3"
+version = "0.1.4"
 description = "An argument permutator generator for generating argument permutations for running automated tests and or benchmarks"
 authors = ["Michael Andersen <gosuckadeadcow+github@gmail.com>"]
 license = "lgpl-3.0"
