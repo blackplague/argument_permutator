@@ -6,23 +6,32 @@
                inputs, that is returned as a dictionary that can be used as arguments for
                a function. As an example see demo.py.
 
-.. moduleauthor:: Michael Andersen <gosuckadeadcow+github@gmail.com>
+.. moduleauthor:: Michael Andersen <michael10andersen+argperm@gmail.com>
 """
 from collections.abc import Generator
 from functools import reduce
 from itertools import product
 from operator import mul
+from typing import Dict
 
 
 class ArgumentPermutator(Generator):
-    def __init__(self, **kwargs):
-        self.arguments = product(*kwargs.values())
+    def __init__(self, fixed_kwargs: Dict=None, **kwargs):
+        self.fixed_kwargs = fixed_kwargs
+        self.arguments = product(*kwargs.values()) if kwargs.values() else None
         self.keys = kwargs.keys()
-        self.length = reduce(mul, map(len, kwargs.values()))
+        self.length = reduce(mul, map(len, kwargs.values())) if kwargs.values() else 0
 
     def send(self, ignored_args=None):
+        if self.arguments is None:
+            raise StopIteration
         try:
-            return dict(zip(self.keys, next(self.arguments)))
+            if self.fixed_kwargs:
+                kwargs = {**dict(self.fixed_kwargs), **dict(zip(self.keys, next(self.arguments)))}
+            else:
+                kwargs = dict(zip(self.keys, next(self.arguments)))
+            self.length -= 1
+            return kwargs
         except StopIteration as si:
             raise si
 
