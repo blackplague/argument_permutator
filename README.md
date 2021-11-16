@@ -59,6 +59,13 @@ a is two and b is True
 a is still two and b is false
 ```
 
-## License
+## Release History
 
-See the file **LICENSE.md**
+* 0.1.5
+  * Still in pre-release
+
+## Meta
+
+Michael Andersen - michael10andersen+argperm -[at]- gmail.com - [Github](https://github.com/blackplague/)
+
+Distributed under the LGPL3 license. See ``LICENSE`` for more information.
